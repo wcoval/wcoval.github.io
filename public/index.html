@@ -7,9 +7,26 @@
   </title>
 
   <style>
+* {
+  border: thin red solid;
+}
+
     body {
       padding-top: 40px;
       padding-bottom: 40px;
+      background-color: #fffffe;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 640px;
+    }
+
+    .banner{
+      background-color: #094067;
+      color: #fffffe;
     }
 
     .banner-image {
@@ -25,43 +42,55 @@
     height: 48px;
     object-fit: cover;
     border-radius: 48px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
     }
 
-    .google-image {
-    width: 48px;
-    height: 12px;
-    object-fit: cover;
-    border-radius: 96px
+    .social-icons {
     }
+
+    .link {
+      background-color: #094067;
+      color: #fffffe;
+      text-decoration: none;
+      border-radius: 5px;
+      padding: 3px;
+    }
+
+AT THE FLEX GROW STEP
   </style>
 
 </head>
 <body>
+<div class="items">
+
 <div class="banner">
 <img src="/images/IMG_6577_cropped.JPG" alt="Will Coval Headshot" class="banner-image">
 
 Will Coval</div>
 
-<div class="linkedin">
+<div class="social-icons">
     <img src="/images/linkedin.jpg" alt="LinkedIn Profile" class="thumbnail-image">
 
-<a href="https://www.linkedin.com/in/wilsoncoval/" target="_blank">
+<a href="https://www.linkedin.com/in/wilsoncoval/" target="_blank" class="link">
   LinkedIn
 </a>
 </div>
 
-<div class="github">
+<div class="social-icons">
   <img src="/images/github.jpg" alt="Github Profile" class="thumbnail-image">
-<a href="https://github.com/wcoval" target="_blank">
+<a href="https://github.com/wcoval" target="_blank" class="link">
   Github
 </a>
 </div>
 
-<div class="strava">
-  <img src="/images/strava.jpg" alt="Google" class="thumbnail-image">
-  <a href="https://google.com" target="_blank">
-  Google
+<div class="social-icons">
+  <img src="/images/strava.jpg" alt="Strava profile" class="thumbnail-image">
+  <a href="https://www.strava.com/athletes/wcoval" target="_blank" class="link">
+  Strava
 </a>
+</div>
 </div>
 
 </body>
