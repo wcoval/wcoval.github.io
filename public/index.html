@@ -27,6 +27,14 @@
     .banner{
       background-color: #094067;
       color: #fffffe;
+      display: flex;
+      justify-content: center;
+    }
+
+    .name{
+      color: #094067;
+      display: flex;
+      justify-content: center;
     }
 
     .banner-image {
@@ -35,6 +43,8 @@
     object-fit: cover;
     border-radius: 128px;
     border: solid black 2px;
+    display: flex;
+    
     }
 
     .thumbnail-image {
@@ -61,15 +71,17 @@
       background-color: #094067;
       border-radius: 5px;
       padding: 3px;
-      text-align: center;
-      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
     }
 
     .link {
       background-color: #094067;
       border-radius: 5px;
       padding: 3px;
-      text-align: center;
+      display: flex;
+      align-items: center;
     }
 
     .social-icons a {
@@ -97,8 +109,10 @@
 
 <div class="banner">
 <img src="/images/IMG_6577_cropped.JPG" alt="Will Coval Headshot" class="banner-image">
-
-Will Coval</div>
+</div>
+<div class="name">
+  Will Coval
+</div>
 
 <div class="social-icons">
   <img src="/images/linkedin.jpg" alt="LinkedIn Profile" class="thumbnail-image">
