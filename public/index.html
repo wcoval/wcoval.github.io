@@ -7,9 +7,6 @@
   </title>
 
   <style>
-* {
-  border: thin red solid;
-}
 
     body {
       padding-top: 40px;
@@ -20,7 +17,7 @@
     .items {
       display: flex;
       flex-direction: column;
-      gap: 30px;
+      gap: 10px;
       max-width: 640px;
     }
 
@@ -29,12 +26,14 @@
       color: #fffffe;
       display: flex;
       justify-content: center;
+      padding: 5px;
     }
 
     .name{
       color: #094067;
       display: flex;
       justify-content: center;
+      border-style: double;
     }
 
     .banner-image {
@@ -66,6 +65,7 @@
       border-radius: 5px;
       padding: 3px;
       display: flex;
+      align-items: center;
     }
 
     .link {
@@ -81,7 +81,7 @@
       text-decoration: none;
       border-radius: 5px;
       padding: 3px;
-      text-align: center;
+      flex-grow: 1;
     }
 
     .link a {
@@ -110,16 +110,12 @@
   <a href="https://www.linkedin.com/in/wilsoncoval/" target="_blank">
   LinkedIn
 </a>
-</div>
 
-<div class="social-icons">
   <img src="/images/github.jpg" alt="Github Profile" class="thumbnail-image">
   <a href="https://github.com/wcoval" target="_blank">
   Github
 </a>
-</div>
 
-<div class="social-icons">
   <img src="/images/strava.jpg" alt="Strava profile" class="thumbnail-image">
   <a href="https://www.strava.com/athletes/wcoval" target="_blank">
   Strava
@@ -130,6 +126,13 @@
   <img src="/images/rich roll.jpg" alt="Rich Roll Podcast" class="link-image">
   <a href="https://www.richroll.com/all-episodes/" target="_blank">
   Rich Roll Podcast
+  </a>
+</div>
+
+<div class="link">
+  <img src="/images/nike.jpg" alt="Shoe Dog Wiki" class="link-image">
+  <a href="https://en.wikipedia.org/wiki/Shoe_Dog" target="_blank">
+  Shoe Dog - Phil Knight
   </a>
 </div>
 
